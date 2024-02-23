@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="signup">
+    <form action="/signup" method="POST">
+        <div class="frame">
+            <h3>サインアップする</h3>
+          </div>
+        <div class="box1">
+            <label for="text1" id="l_text1">ユーザー名</label>
+            <input id="text1" type="text">
+        </div>
+        <div class="box1">
+            <label for="text2" id="l_text2">パスワード</label>
+            <input id="text2" type="password">
+        </div>
+        <button class="btn1" type="submit">サインアップ</button>
+    </form>
+</div>
+{% endblock %}
